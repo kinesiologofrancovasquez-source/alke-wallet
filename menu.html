@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Panel principal de Alke Wallet."
+    >
+
+    <title>Inicio | Alke Wallet</title>
+
+
+    <!-- Bootstrap -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+
+            <a
+                class="navbar-brand fw-bold"
+                href="menu.html"
+            >
+                Alke Wallet
+            </a>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Abrir menú"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarMenu"
+            >
+
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="menu.html"
+                        >
+                            Inicio
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="deposit.html"
+                        >
+                            Depositar
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="withdraw.html"
+                        >
+                            Retirar
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="sendmoney.html"
+                        >
+                            Enviar dinero
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="transactions.html"
+                        >
+                            Movimientos
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <button
+                            id="logoutButton"
+                            class="btn btn-link nav-link"
+                            type="button"
+                        >
+                            Cerrar sesión
+                        </button>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         CONTENIDO
+    ====================================================== -->
+
+    <main class="container py-5">
+
+
+        <!-- BIENVENIDA -->
+
+        <section
+            class="welcome-section mb-5"
+            id="welcomeSection"
+        >
+
+            <p class="text-primary fw-semibold mb-1">
+                Panel principal
+            </p>
+
+            <h1 class="display-5 fw-bold">
+                Bienvenido a Alke Wallet
+            </h1>
+
+            <p class="lead text-muted">
+                Administra tus fondos de forma simple y segura.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESUMEN FINANCIERO
+        ================================================== -->
+
+        <section>
+
+            <div class="row g-4">
+
+
+                <!-- SALDO -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card financial-card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <div class="card-icon balance-icon">
+                                $
+                            </div>
+
+                            <h2 class="h5 mt-3">
+                                Saldo disponible
+                            </h2>
+
+                            <p
+                                id="balance"
+                                class="display-6 fw-bold mb-2"
+                            >
+                                $100.000
+                            </p>
+
+                            <p class="text-muted mb-0">
+                                Fondos disponibles en tu wallet.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DEPOSITAR -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card financial-card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <div class="card-icon deposit-icon">
+                                +
+                            </div>
+
+                            <h2 class="h5 mt-3">
+                                Depositar dinero
+                            </h2>
+
+                            <p class="text-muted">
+                                Agrega fondos a tu billetera.
+                            </p>
+
+                            <a
+                                href="deposit.html"
+                                class="btn btn-success"
+                            >
+                                Realizar depósito
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ENVIAR -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card financial-card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <div class="card-icon send-icon">
+                                →
+                            </div>
+
+                            <h2 class="h5 mt-3">
+                                Enviar dinero
+                            </h2>
+
+                            <p class="text-muted">
+                                Envía fondos a tus contactos.
+                            </p>
+
+                            <a
+                                href="sendmoney.html"
+                                class="btn btn-primary"
+                            >
+                                Enviar dinero
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACCIONES RÁPIDAS
+        ================================================== -->
+
+        <section class="mt-4">
+
+            <div class="card shadow-sm">
+
+                <div class="card-body">
+
+                    <h2 class="h4 mb-3">
+                        Acciones rápidas
+                    </h2>
+
+
+                    <div class="d-flex flex-wrap gap-2">
+
+                        <a
+                            href="deposit.html"
+                            class="btn btn-outline-success"
+                        >
+                            Depositar
+                        </a>
+
+
+                        <a
+                            href="withdraw.html"
+                            class="btn btn-outline-danger"
+                        >
+                            Retirar
+                        </a>
+
+
+                        <a
+                            href="sendmoney.html"
+                            class="btn btn-outline-primary"
+                        >
+                            Enviar dinero
+                        </a>
+
+
+                        <a
+                            href="transactions.html"
+                            class="btn btn-outline-secondary"
+                        >
+                            Ver movimientos
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ÚLTIMOS MOVIMIENTOS
+        ================================================== -->
+
+        <section class="mt-5">
+
+            <div class="card shadow-sm">
+
+                <div class="card-body">
+
+                    <div
+                        class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3"
+                    >
+
+                        <div>
+
+                            <h2 class="h4 mb-1">
+                                Últimos movimientos
+                            </h2>
+
+                            <p class="text-muted mb-0">
+                                Consulta las operaciones recientes.
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="transactions.html"
+                            class="btn btn-outline-primary"
+                        >
+                            Ver todos
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        id="recentTransactions"
+                        class="mt-4"
+                    ></div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- Bootstrap -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <!-- jQuery -->
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+    ></script>
+
+
+    <!-- JS propio -->
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
