@@ -1,1 +1,495 @@
+/* =========================================================
+   ALKE WALLET
+   ESTILOS PRINCIPALES
+========================================================= */
 
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --primary-color: #0d6efd;
+
+    --success-color: #198754;
+
+    --danger-color: #dc3545;
+
+    --dark-color: #212529;
+
+    --light-background: #f5f7fa;
+
+    --border-color: #dee2e6;
+
+}
+
+
+/* =========================================================
+   ESTILOS GENERALES
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color:
+        var(--light-background);
+
+    color:
+        #212529;
+
+    min-height:
+        100vh;
+
+}
+
+
+/* =========================================================
+   NAVEGACIÓN
+========================================================= */
+
+.navbar {
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.navbar-brand {
+
+    letter-spacing:
+        0.3px;
+
+}
+
+
+.navbar .nav-link {
+
+    transition:
+        opacity 0.2s ease;
+
+}
+
+
+.navbar .nav-link:hover {
+
+    opacity:
+        0.75;
+
+}
+
+
+/* =========================================================
+   LOGIN
+========================================================= */
+
+.login-page {
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef4ff,
+            #f8f9fa
+        );
+
+}
+
+
+.login-card {
+
+    width:
+        100%;
+
+    max-width:
+        430px;
+
+    border:
+        0;
+
+    border-radius:
+        18px;
+
+}
+
+
+.wallet-icon {
+
+    width:
+        64px;
+
+    height:
+        64px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    border-radius:
+        50%;
+
+    background-color:
+        var(--primary-color);
+
+    color:
+        white;
+
+    font-size:
+        28px;
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
+.card {
+
+    border-radius:
+        14px;
+
+    border:
+        1px solid var(--border-color);
+
+}
+
+
+.financial-card {
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.financial-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.10) !important;
+
+}
+
+
+/* =========================================================
+   ICONOS
+========================================================= */
+
+.card-icon,
+.page-icon {
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        12px;
+
+    font-size:
+        25px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.page-icon {
+
+    margin:
+        0 auto;
+
+}
+
+
+.balance-icon {
+
+    background-color:
+        #e7f1ff;
+
+    color:
+        var(--primary-color);
+
+}
+
+
+.deposit-icon {
+
+    background-color:
+        #e8f5ee;
+
+    color:
+        var(--success-color);
+
+}
+
+
+.send-icon {
+
+    background-color:
+        #e7f1ff;
+
+    color:
+        var(--primary-color);
+
+}
+
+
+.withdraw-icon {
+
+    background-color:
+        #fdebed;
+
+    color:
+        var(--danger-color);
+
+}
+
+
+/* =========================================================
+   FORMULARIOS
+========================================================= */
+
+.form-control {
+
+    border-radius:
+        9px;
+
+}
+
+
+.form-control:focus {
+
+    box-shadow:
+        0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.btn {
+
+    border-radius:
+        8px;
+
+    font-weight:
+        600;
+
+}
+
+
+/* =========================================================
+   CONTACTOS
+========================================================= */
+
+#contactSuggestions {
+
+    position:
+        relative;
+
+    z-index:
+        10;
+
+}
+
+
+#contactSuggestions .list-group-item {
+
+    cursor:
+        pointer;
+
+    transition:
+        background-color 0.2s ease;
+
+}
+
+
+#contactSuggestions .list-group-item:hover {
+
+    background-color:
+        #f1f3f5;
+
+}
+
+
+/* =========================================================
+   TRANSACCIONES
+========================================================= */
+
+.transaction-item {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+
+}
+
+
+.transaction-description {
+
+    flex:
+        1;
+
+}
+
+
+.transaction-amount {
+
+    font-weight:
+        bold;
+
+    white-space:
+        nowrap;
+
+    font-size:
+        1.05rem;
+
+}
+
+
+.transaction-positive {
+
+    border-left:
+        4px solid var(--success-color);
+
+}
+
+
+.transaction-negative {
+
+    border-left:
+        4px solid var(--danger-color);
+
+}
+
+
+/* =========================================================
+   BIENVENIDA
+========================================================= */
+
+.welcome-section {
+
+    padding:
+        10px 0;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .navbar .nav-link {
+
+        padding-top:
+            10px;
+
+        padding-bottom:
+            10px;
+
+    }
+
+
+    .transaction-item {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+    }
+
+
+    .transaction-amount {
+
+        white-space:
+            normal;
+
+    }
+
+
+    .display-5 {
+
+        font-size:
+            2rem;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    main.container {
+
+        padding-left:
+            18px;
+
+        padding-right:
+            18px;
+
+    }
+
+
+    .card-body {
+
+        padding:
+            1.25rem;
+
+    }
+
+
+    .financial-card {
+
+        margin-bottom:
+            5px;
+
+    }
+
+}
