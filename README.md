@@ -1,6 +1,7 @@
 # Alke Wallet
 
 Proyecto final desarrollado para el módulo de JavaScript.
+ADMIN - 1234
 
 ## Descripción
 
